@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineFileText } from "react-icons/ai";
 
-import Faker from "faker";
 class CardFile extends React.Component {
   constructor(props) {
     super(props);
