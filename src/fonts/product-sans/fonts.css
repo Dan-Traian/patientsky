@@ -1,0 +1,42 @@
+/** Product Sans **/
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Medium.ttf') format('truetype');
+   font-weight: 400; /*Equivalent of 300. */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Regular.ttf') format('truetype');
+   font-weight: 300; /*Equivalent of 300. */
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Bold Italic.ttf') format('truetype');
+    font-weight: bold;/*Equivalent of 700. */
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
