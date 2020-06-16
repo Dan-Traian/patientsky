@@ -25,3 +25,35 @@ body {
 .pointer {
   cursor: pointer;
 }
+
+button,
+input {
+  border: none;
+  outline: none;
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    border: none !important;
+    outline: none !important;
+  }
+}
+
+.patientButton {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  &:hover {
+    transform: translateY(-2px);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    border: 1px dashed #3bb7ab;
+    border-radius: 0.5rem;
+  }
+}

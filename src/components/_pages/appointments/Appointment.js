@@ -15,7 +15,7 @@ class Appointment extends React.Component {
 
   render() {
     return (
-      <section className="container w-full rounded-lg bg-white p-3 mb-3 hover:shadow-md transition border border-md border-gray-300 pointer ">
+      <section className="container w-full rounded-lg bg-white p-3 mb-3 hover:shadow-md transition border border border-gray-300 pointer ">
         <div className="meta flex items-center justify-center ">
           <FaUserCircle className="h-16 w-16  text-gray-600 mx-3" />
           <div className="w-full h-12 flex flex-col justify-between">

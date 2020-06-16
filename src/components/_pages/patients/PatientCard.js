@@ -12,7 +12,7 @@ class PatientCard extends React.Component {
 
   render() {
     return (
-      <div className="w-full border border-sm border-gray-300 rounded-lg bg-white px-5 py-1 mb-1 flex items-center">
+      <div className="w-full border border-gray-300 rounded-lg bg-white px-5 py-1 mb-1 flex items-center">
         <div className="h-10 w-10 bg-gray-400 rounded-full mr-10">
           <img
             className="h-10 w-10 rounded-full mr-10"
@@ -29,7 +29,7 @@ class PatientCard extends React.Component {
         <div className="w-full text-base text-gray-600">
           {Faker.phone.phoneNumber()}
         </div>
-        <div className="w-2/12 text-base text-gray-500 flex">
+        <div className="w-2/12 text-base text-gray-500 flex ">
           <FaUserMd className="icon text-base mr-6" />
           <BsThreeDots className="icon text-base" />
         </div>

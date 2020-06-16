@@ -4,10 +4,13 @@ import logo from "./../assets/logo.svg";
 
 import { NavLink } from "react-router-dom";
 
-import { RiSearchLine } from "react-icons/ri";
-import { RiNotification2Line } from "react-icons/ri";
-import { FcBusinesswoman } from "react-icons/fc";
-import { AiFillSetting } from "react-icons/ai";
+import {
+  RiSearchLine,
+  RiNotification2Line,
+  FcBusinesswoman,
+  AiFillSetting,
+  AiOutlineLogout
+} from "react-icons/all";
 
 class Nav extends React.Component {
   render() {
@@ -37,7 +40,7 @@ class Nav extends React.Component {
           </div>
 
           <div className="ml-auto flex items-center ">
-            <div className="w-64 py-2 px-4 flex items-center border border-sm border-gray-400 rounded-lg bg-gray-200">
+            <div className="w-64 py-2 px-4 flex items-center border-sm border-gray-400 rounded-lg bg-gray-200">
               <p className="text-base">Search ...</p>
               <RiSearchLine className="icon text-gray-600 ml-auto" />
             </div>
@@ -49,6 +52,9 @@ class Nav extends React.Component {
               <FcBusinesswoman className="w-6 h-6 text-gray-600 " />
             </div>
             <p className="text-gray-800 text-base bold mx-2">Dr Diana Lester</p>
+            <NavLink to="/login">
+              <AiOutlineLogout className="w-6 h-6 text-gray-600 " />
+            </NavLink>
           </div>
         </div>
       </div>

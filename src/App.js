@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
 import Patients from "./components/_pages/Patients";
 import Appointments from "./components/_pages/Appointments";
+import Login from "./components/_pages/Login";
+import NotFound from "./components/_pages/NotFound";
+import NotDone from "./components/_pages/NotDone";
 
 function App() {
   return (
@@ -19,13 +22,25 @@ function App() {
 
           <Switch>
             <Route exact path="/">
-              <Appointments />
+              <Login />
+            </Route>
+            <Route exact path="/login">
+              <Login />
             </Route>
             <Route exact path="/appointments">
               <Appointments />
             </Route>
             <Route exact path="/patients">
               <Patients />
+            </Route>
+            <Route exact path="/departments">
+              <NotDone />
+            </Route>
+            <Route exact path="/reports">
+              <NotDone />
+            </Route>
+            <Route exact path="*">
+              <NotFound />
             </Route>
           </Switch>
         </Router>

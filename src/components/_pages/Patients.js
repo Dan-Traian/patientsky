@@ -4,7 +4,7 @@ import SearchBarInput from "./patients/SearchBarInput";
 import PatientCard from "./patients/PatientCard";
 import ButtonIcon from "./patients/ButtonIcon";
 import FileToggle from "./patients/FileToggle";
-import { IoIosArrowDropdown } from "react-icons/all";
+import { IoIosArrowDropdown, BsArrowUpShort } from "react-icons/all";
 
 function PatientCards() {
   const listItems = [];
@@ -47,16 +47,16 @@ class Patients extends React.Component {
           <FileToggle />
         </div>
 
-        <div className="w-full mt-4">
+        <div className="w-full mt-6">
           <div className="flex flex-col">
             <div className="w-full px-5 py-1 mb-1 flex items-center">
               <div className="min-w-10 w-10 mr-10" />
-              <div className="w-full text-md text-gray-400 ml-8">Username</div>
-              <div className="w-full text-md text-gray-400">Email</div>
-              <div className="w-full text-md text-gray-400">Phone</div>
-              <div className="w-4/12 text-md text-gray-400 text-right">
-                Actions
+              <div className="w-full text-sm text-gray-500 ml-8 flex items-center">
+                Username <BsArrowUpShort className="icon text-gray-500" />
               </div>
+              <div className="w-full text-sm text-gray-500">Email</div>
+              <div className="w-full text-sm text-gray-500">Phone</div>
+              <div className="w-2/12 text-sm text-gray-500">Actions</div>
             </div>
             <PatientCards />
           </div>

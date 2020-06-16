@@ -8,7 +8,7 @@ import Faker from "faker";
 
 function PatientCard() {
   return (
-    <section className="w-full bg-white rounded-lg border border-sm border-gray-300 p-6 ">
+    <section className="w-full bg-white rounded-lg border border-gray-300 p-6 ">
       <div className="meta flex items-center justify-center">
         <FcBusinesswoman className="h-16 w-16 mr-3" />
         <div className="w-full">

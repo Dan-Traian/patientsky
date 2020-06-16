@@ -9,7 +9,9 @@ module.exports = {
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      xl: "1280px"
+      xl: "1280px",
+      mac: "1650px",
+      wide: "1920"
     },
     colors: {
       transparent: "transparent",
@@ -104,6 +106,7 @@ module.exports = {
       default: "0.25rem",
       md: "0.375rem",
       lg: "0.5rem",
+      xl: "1rem",
       full: "9999px"
     },
     borderWidth: {
@@ -127,6 +130,7 @@ module.exports = {
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
+      teal: "0 0 0 3px rgba(59, 183, 171 0.5)",
       none: "none"
     },
     container: {},
