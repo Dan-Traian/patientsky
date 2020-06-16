@@ -12,7 +12,12 @@ class PatientCard extends React.Component {
 
   render() {
     return (
-      <div className="w-full border border-gray-300 rounded-lg bg-white px-5 py-1 mb-1 flex items-center">
+      <div
+        className="w-full border border-gray-300 rounded-lg bg-white px-5 py-1 mb-1 flex items-center pointer transition hover:border-teal-main "
+        onClick={() => {
+          window.location.href = "/patients";
+        }}
+      >
         <div className="h-10 w-10 bg-gray-400 rounded-full mr-10">
           <img
             className="h-10 w-10 rounded-full mr-10"

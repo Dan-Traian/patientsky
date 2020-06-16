@@ -32,18 +32,33 @@ class Nav extends React.Component {
               to="/departments"
               activeClassName="font-bold text-teal-main"
             >
-              <p className="text-base mx-6">Departments</p>
+              <p className="text-base mx-6 flex items-center">
+                Departments{" "}
+                <span className="bg-blue-accent text-white px-1 rounded-lg text-xs ml-2">
+                  wip
+                </span>
+              </p>
             </NavLink>
             <NavLink to="/reports" activeClassName="font-bold text-teal-main">
-              <p className="text-base mx-6">Reports</p>
+              <p className="text-base mx-6 flex items-center">
+                Reports
+                <span className="bg-blue-accent text-white px-1 rounded-lg text-xs ml-2">
+                  wip
+                </span>{" "}
+              </p>
             </NavLink>
           </div>
 
           <div className="ml-auto flex items-center ">
-            <div className="w-64 py-2 px-4 flex items-center border-sm border-gray-400 rounded-lg bg-gray-200">
-              <p className="text-base">Search ...</p>
+            <div className="w-64 py-2 px-4  flex items-center border border-gray-400 rounded-md  bg-gray-200">
+              <input
+                className="w-full  bg-gray-200"
+                type="text"
+                placeholder="Search ..."
+              />
               <RiSearchLine className="icon text-gray-600 ml-auto" />
             </div>
+
             <AiFillSetting className="icon text-gray-600 mx-4 " />
             <RiNotification2Line className="icon text-gray-600 mx-4 " />
           </div>

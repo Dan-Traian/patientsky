@@ -10,8 +10,12 @@ class SearchBarInputProps extends React.Component {
 
   render() {
     return (
-      <div className="w-full py-2 px-4 flex items-center border border-gray-400 rounded-lg bg-gray-200">
-        <p className="text-base text-gray-600">{this.props.placeholder}</p>
+      <div className="w-full py-2 px-4  flex items-center border border-gray-400 rounded-md  bg-gray-200">
+        <input
+          className="w-full  bg-gray-200"
+          type="text"
+          placeholder="Search in users"
+        />
         <RiSearchLine className="icon text-gray-600 ml-auto" />
       </div>
     );
