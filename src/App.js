@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.scss";
 import "./tailwind.generated.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
 import Patients from "./components/_pages/Patients";
+import Appointments from "./components/_pages/Appointments";
 
 function App() {
   return (
@@ -16,7 +17,17 @@ function App() {
           <Nav />
           <div className="w-full  px-10 mac:px-0" />
 
-          <Route to={"/patients"} component={Patients} />
+          <Switch>
+            <Route exact path="/">
+              <Appointments />
+            </Route>
+            <Route exact path="/appointments">
+              <Appointments />
+            </Route>
+            <Route exact path="/patients">
+              <Patients />
+            </Route>
+          </Switch>
         </Router>
       </div>
     </div>

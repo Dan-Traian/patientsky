@@ -4,15 +4,16 @@ import { FcBusinesswoman } from "react-icons/fc";
 import { AiOutlinePhone } from "react-icons/ai";
 import { FiMail } from "react-icons/fi";
 import { BsHouseDoor } from "react-icons/bs";
+import Faker from "faker";
 
-function PassengerCard() {
+function PatientCard() {
   return (
-    <section className="w-full rounded-lg border border-sm border-gray-300 p-3 ">
+    <section className="w-full bg-white rounded-lg border border-sm border-gray-300 p-6 ">
       <div className="meta flex items-center justify-center">
         <FcBusinesswoman className="h-16 w-16 mr-3" />
         <div className="w-full">
           <p className="name text-base text-gray-800 font-bold ">
-            Krisztina Noemi
+            Francisca Medhurst
           </p>
           <p className="name text-sm  text-blue-accent font-bold ">
             View profile
@@ -39,16 +40,15 @@ function PassengerCard() {
         <div className="h-10 w-10 flex items-center justify-center bg-teal-light text-teal-main rounded-full">
           <AiOutlinePhone className="icon" />
         </div>
-        <p className="text-base text-gray-600 ml-2 "> +45 91 84 01 25</p>
+        <p className="text-base text-gray-600 ml-2 ">
+          {Faker.phone.phoneNumber()}
+        </p>
       </div>
       <div className="w-full flex items-center mt-3">
         <div className="h-10 w-10 flex items-center justify-center bg-teal-light text-teal-main rounded-full">
           <FiMail className="icon" />
         </div>
-        <p className="text-base text-gray-600 ml-2 ">
-          {" "}
-          naomi.krisztina@gmac.com
-        </p>
+        <p className="text-base text-gray-600 ml-2 ">francesca.med@gmail.com</p>
       </div>
       <div className="w-full flex items-center mt-3">
         <div className="h-10 w-10 flex items-center justify-center bg-teal-light text-teal-main rounded-full">
@@ -60,4 +60,4 @@ function PassengerCard() {
   );
 }
 
-export default PassengerCard;
+export default PatientCard;

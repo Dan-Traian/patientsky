@@ -1,26 +1,23 @@
 import * as React from "react";
 
-import { IoIosArrowDropdown } from "react-icons/io";
-import { BsFilter } from "react-icons/bs";
-
 import SearchBarInput from "./patients/SearchBarInput";
 import PatientCard from "./patients/PatientCard";
+import ButtonIcon from "./patients/ButtonIcon";
+import FileToggle from "./patients/FileToggle";
+import { IoIosArrowDropdown } from "react-icons/all";
+
+function PatientCards() {
+  const listItems = [];
+  for (let i = 0; i < 50; i++) {
+    listItems.push(<PatientCard key={i} />);
+  }
+  return listItems;
+}
 
 class Patients extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  getPatientsCards() {
-    const listItems = [];
-    for (let i = 0; i < 50; i++) {
-      listItems.push(<PatientCard />);
-    }
-    return { listItems };
-  }
   render() {
     return (
-      <div className="w-full bg-gray-100 mt-16 mx-auto max-w-9xl py-10">
+      <div className="w-full bg-gray-100 mt-16 mx-auto max-w-9xl py-4">
         <p className="text-3xl font-bold text-blue-main ">Patients</p>
         <div className="titleBar w-full flex items-center my-3">
           <div className="tabItem text-lg font-bold text-blue-main">All</div>
@@ -36,18 +33,18 @@ class Patients extends React.Component {
         <div className="w-full border-b border-sm border-gray-300" />
 
         <div className="w-full flex mt-6">
-          <div className="px-3 py-2  bg-teal-light rounded-md flex justify-between items-center shadow-sm">
-            <p className="text-base text-teal-main font-bold">Recent week</p>
-            <IoIosArrowDropdown className="icon text-teal-main ml-10" />
+          <ButtonIcon title="Recent week" active={true} />
+          <ButtonIcon title="Country" />
+          <ButtonIcon title="More" />
+
+          <div className="flex justify-between items-center ml-auto mr-10">
+            <p className="text-base text-gray-600 mr-4">
+              Sort by : <span className="font-bold text-gray-700 ">All</span>
+            </p>
+            <IoIosArrowDropdown className="icon text-gray-700" />
           </div>
-          <div className="px-3 py-2 border border-gray-400 bg-white  rounded-md flex justify-between items-center shadow-sm ml-10">
-            <p className="text-base text-gray-600">Country</p>
-            <IoIosArrowDropdown className="icon text-gray-600 ml-10" />
-          </div>
-          <div className="px-3 py-2 border border-gray-400 bg-white  rounded-md flex justify-between items-center shadow-sm ml-10">
-            <p className="text-base text-gray-600">More</p>
-            <BsFilter className="icon text-gray-600 ml-10" />
-          </div>
+
+          <FileToggle />
         </div>
 
         <div className="w-full mt-4">
@@ -57,9 +54,11 @@ class Patients extends React.Component {
               <div className="w-full text-md text-gray-400 ml-8">Username</div>
               <div className="w-full text-md text-gray-400">Email</div>
               <div className="w-full text-md text-gray-400">Phone</div>
-              <div className="w-4/12 text-md text-gray-400">Actions</div>
+              <div className="w-4/12 text-md text-gray-400 text-right">
+                Actions
+              </div>
             </div>
-            {this.getPatientsCards()}
+            <PatientCards />
           </div>
         </div>
       </div>
