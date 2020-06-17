@@ -28,13 +28,11 @@ body {
 
 button,
 input {
-  border: none;
   outline: none;
   &:hover,
   &:active,
   &:focus,
   &:visited {
-    border: none !important;
     outline: none !important;
   }
 }
@@ -56,4 +54,8 @@ input {
     border: 1px dashed #3bb7ab;
     border-radius: 0.5rem;
   }
+}
+
+.testing-height {
+  height: 400px;
 }

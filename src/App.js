@@ -8,14 +8,15 @@ import Appointments from "./components/_pages/Appointments";
 import Login from "./components/_pages/Login";
 import NotFound from "./components/_pages/NotFound";
 import NotDone from "./components/_pages/NotDone";
+import Patient from "./components/_pages/Patient";
 
 function App() {
   return (
     <div
       id="App"
-      className="w-screen min-h-screen max-w-screen overflow-x-hidden flex justify-center bg-gray-100"
+      className="w-screen min-h-screen max-w-screen overflow-x-hidden flex justify-center bg-washed-white"
     >
-      <div className="content w-full flex flex-col  mx-auto max-w-screen overflow-x-hidden">
+      <div className="content w-full flex flex-col  mx-auto max-w-screen overflow-x-hidden px-3 mac:px-0 border-r border-l border-gray-300">
         <Router>
           <Nav />
           <div className="w-full  px-10 mac:px-0" />
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route exact path="/patients">
               <Patients />
+            </Route>
+            <Route exact path="/patients/:id">
+              <Patient />
             </Route>
             <Route exact path="/departments">
               <NotDone />

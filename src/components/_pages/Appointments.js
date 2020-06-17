@@ -21,7 +21,7 @@ function AppointmentsCards() {
 class Appointments extends React.Component {
   render() {
     return (
-      <div className="w-full bg-gray-100 mt-16 mx-auto max-w-9xl py-4">
+      <div className="w-full mt-16 mx-auto max-w-9xl py-4">
         <p className="text-3xl font-bold text-blue-main">Appointments</p>
         <div className="titleBar w-full flex items-center my-3">
           <div className="tabItem text-lg font-bold text-blue-main">All</div>

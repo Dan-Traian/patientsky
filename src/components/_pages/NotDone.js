@@ -7,11 +7,9 @@ import { NavLink } from "react-router-dom";
 class NotDone extends React.Component {
   render() {
     return (
-      <div className="w-screen h-screen fixed z-999 bg-white flex flex-col items-center justify-center">
+      <div className="w-screen h-screen bg-white flex flex-col items-center justify-center">
         <img className="max-w-lg h-auto mb-10" src={wip} alt="" />
-
         <p className="text-2xl text-teal-main"> Page is a work in progress</p>
-
         <NavLink to="/appointments">
           <button
             type="button"
