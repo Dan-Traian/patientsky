@@ -30,7 +30,12 @@ class Patients extends React.Component {
                 Social security number *
               </p>
               <div className="w-full flex items-center border border-gray-300 rounded-md mb-2 p-3">
-                <input className="w-full bg-white" type="text" placeholder="" />
+                <input
+                  className="w-full bg-white"
+                  type="text"
+                  placeholder=""
+                  value="02451231241512-2001"
+                />
                 <MdEmail className="text-xl text-teal-main ml-3" />
               </div>
               <p className="text-base text-gray-700 mt-3 ">Password *</p>
@@ -38,6 +43,7 @@ class Patients extends React.Component {
                 <input
                   className="w-full bg-white"
                   type="password"
+                  value="SecretPassword"
                   placeholder=""
                 />
                 <IoIosLock className="text-xl text-teal-main ml-3" />
