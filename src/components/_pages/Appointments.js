@@ -9,6 +9,7 @@ import Appointment from "./appointments/Appointment";
 import PatientCard from "./appointments/PatientCard";
 
 import doctor from "./../../assets/img/doctor.svg";
+import SearchBarInput from "./patients/SearchBarInput";
 
 function AppointmentsCards() {
   const listItems = [];
@@ -27,6 +28,10 @@ class Appointments extends React.Component {
           <div className="tabItem text-lg font-bold text-blue-main">All</div>
           <div className="tabItem text-lg  ml-10 text-gray-600">
             Visiting today
+          </div>
+
+          <div className="ml-auto w-1/4">
+            <SearchBarInput placeholder="Search in appointments..." />
           </div>
         </div>
 

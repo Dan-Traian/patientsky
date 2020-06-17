@@ -26,7 +26,7 @@ class Patients extends React.Component {
           </div>
 
           <div className="ml-auto w-1/4">
-            <SearchBarInput placeholder="Search by name" />
+            <SearchBarInput placeholder="Search by name..." />
           </div>
         </div>
 

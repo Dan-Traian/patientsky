@@ -13,7 +13,7 @@ class MetaTag extends React.Component {
         <p className="text-center text-md text-gray-700 font-bold mt-2">
           {this.props.value}
         </p>
-        <div className="w-10/12 border-b-2 border-gray-100 mt-4"></div>
+        <div className="w-10/12 border-b-2 border-gray-100 mt-4" />
       </div>
     );
   }

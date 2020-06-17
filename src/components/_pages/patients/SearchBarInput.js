@@ -14,7 +14,7 @@ class SearchBarInputProps extends React.Component {
         <input
           className="w-full  bg-gray-200"
           type="text"
-          placeholder="Search in users"
+          placeholder={this.props.placeholder}
         />
         <RiSearchLine className="icon text-gray-600 ml-auto" />
       </div>
