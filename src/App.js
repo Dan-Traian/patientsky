@@ -16,37 +16,37 @@ function App() {
       id="App"
       className="w-screen min-h-screen max-w-screen overflow-x-hidden flex justify-center bg-washed-white"
     >
-      <div className="content w-full flex flex-col  mx-auto max-w-screen overflow-x-hidden px-3 mac:px-0 border-r border-l border-gray-300">
+      <div className="content w-full flex flex-col  mx-auto max-w-screen overflow-x-hidden border-r border-l border-gray-300">
         <Router>
           <Nav />
-          <div className="w-full  px-10 mac:px-0" />
-
-          <Switch>
-            <Route exact path="/">
-              <Login />
-            </Route>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/appointments">
-              <Appointments />
-            </Route>
-            <Route exact path="/patients">
-              <Patients />
-            </Route>
-            <Route exact path="/patients/:id">
-              <Patient />
-            </Route>
-            <Route exact path="/departments">
-              <NotDone />
-            </Route>
-            <Route exact path="/reports">
-              <NotDone />
-            </Route>
-            <Route exact path="*">
-              <NotFound />
-            </Route>
-          </Switch>
+          <div className="w-full  px-4 mac:px-0">
+            <Switch>
+              <Route exact path="/">
+                <Appointments />
+              </Route>
+              <Route exact path="/login">
+                <Login />
+              </Route>
+              <Route exact path="/appointments">
+                <Appointments />
+              </Route>
+              <Route exact path="/patients">
+                <Patients />
+              </Route>
+              <Route exact path="/patients/:id">
+                <Patient />
+              </Route>
+              <Route exact path="/departments">
+                <NotDone />
+              </Route>
+              <Route exact path="/reports">
+                <NotDone />
+              </Route>
+              <Route exact path="*">
+                <NotFound />
+              </Route>
+            </Switch>
+          </div>
         </Router>
       </div>
     </div>

@@ -9,7 +9,7 @@ let name = Faker.name.firstName() + " " + Faker.name.lastName();
 class Patient extends React.Component {
   render() {
     return (
-      <div className="w-full mt-16 mx-auto max-w-9xl py-4">
+      <div className="w-full mt-16 mx-auto max-w-9xl py-4 pr-4">
         <div className="w-full flex items-center">
           <p className="text-3xl font-bold text-blue-main flex items-center">
             <FaUserCog className="text-2xl mr-5 text-teal-main" />

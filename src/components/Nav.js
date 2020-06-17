@@ -15,9 +15,11 @@ import {
 class Nav extends React.Component {
   render() {
     return (
-      <div className="fixed h-16 t-0 l-0 w-screen flex p-2 bg-white border-b border-sm border-gray-300">
+      <div className="fixed h-16 t-0 l-0 w-full flex p-2 bg-white border-b border-sm border-gray-300">
         <div className="w-full max-w-9xl flex items-center mx-auto  text-gray-600">
-          <img src={logo} alt="Logo" className="h-10 w-auto m-2 mr-10" />
+          <NavLink to="/">
+            <img src={logo} alt="Logo" className="h-10 w-auto m-2 mr-10" />
+          </NavLink>
           <div className="flex items-center">
             <NavLink
               to="/appointments"
