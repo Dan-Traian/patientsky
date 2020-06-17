@@ -9,6 +9,7 @@ import Login from "./components/_pages/Login";
 import NotFound from "./components/_pages/NotFound";
 import NotDone from "./components/_pages/NotDone";
 import Patient from "./components/_pages/Patient";
+import Schedule from "./components/_pages/Schedule";
 
 function App() {
   return (
@@ -36,8 +37,8 @@ function App() {
               <Route exact path="/patients/:id">
                 <Patient />
               </Route>
-              <Route exact path="/departments">
-                <NotDone />
+              <Route exact path="/schedule">
+                <Schedule />
               </Route>
               <Route exact path="/reports">
                 <NotDone />

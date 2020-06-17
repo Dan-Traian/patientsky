@@ -32,7 +32,7 @@ class Patients extends React.Component {
 
         <div className="w-full border-b border-sm border-gray-300" />
 
-        <div className="w-full flex mt-6">
+        <div className="w-full flex mt-4">
           <ButtonIcon title="Recent week" active={true} />
           <ButtonIcon title="Country" />
           <ButtonIcon title="More" />

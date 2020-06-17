@@ -77,15 +77,15 @@ class Patient extends React.Component {
             <div className="scheduleCard w-full p-5 mt-3 bg-white rounded-lg">
               <div className="tabs w-2/3 flex items-center p-1 bg-gray-200 rounded-md">
                 <div className="tab p-2 w-full bg-white flex items-center justify-center rounded-md">
-                  <p className="text-base text-teal-main">
+                  <p className="text-md text-teal-main">
                     Upcoming Appointments
                   </p>
                 </div>
                 <div className="tab p-2 w-full flex items-center justify-center ">
-                  <p className="text-base text-gray-500">Past Appointments</p>
+                  <p className="text-md text-gray-500">Past Appointments</p>
                 </div>
                 <div className="tab p-2 w-full flex items-center justify-center ">
-                  <p className="text-base text-gray-500">Medical records</p>
+                  <p className="text-md text-gray-500">Medical records</p>
                 </div>
               </div>
 

@@ -30,16 +30,8 @@ class Nav extends React.Component {
             <NavLink to="/patients" activeClassName="font-bold text-teal-main">
               <p className="text-base mx-6">Patients</p>
             </NavLink>
-            <NavLink
-              to="/departments"
-              activeClassName="font-bold text-teal-main"
-            >
-              <p className="text-base mx-6 flex items-center">
-                Departments{" "}
-                <span className="bg-blue-accent text-white px-1 rounded-lg text-xs ml-2">
-                  wip
-                </span>
-              </p>
+            <NavLink to="/schedule" activeClassName="font-bold text-teal-main">
+              <p className="text-base mx-6 flex items-center">Schedule</p>
             </NavLink>
             <NavLink to="/reports" activeClassName="font-bold text-teal-main">
               <p className="text-base mx-6 flex items-center">

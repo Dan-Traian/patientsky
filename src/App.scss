@@ -79,6 +79,11 @@ $unit: 20px;
   }
 }
 
+.stripped {
+  background: repeating-linear-gradient(45deg, #fff, #fff 28px, #e2e8f0 30px);
+  cursor: not-allowed;
+}
+
 .height-test {
   height: 400px;
 }
